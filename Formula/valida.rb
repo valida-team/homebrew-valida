@@ -5,20 +5,20 @@
 class Valida < Formula
   desc "CLI Tools to automate API Testing based on OpenAPI Spec"
   homepage "https://github.com/valida-team/valida"
-  version "0.0.19"
+  version "0.0.20"
 
   on_macos do
     on_intel do
-      url "https://github.com/valida-team/valida/releases/download/v0.0.19/valida_0.0.19_darwin_amd64.tar.gz"
-      sha256 "07a28962e309c13c51420a458e7a0f1102e61c1efb2baf4323d804f9a9670f7a"
+      url "https://github.com/valida-team/valida/releases/download/v0.0.20/valida_0.0.20_darwin_amd64.tar.gz"
+      sha256 "0dc98b835d4dadd7457de15dc80a16584568b3e3997d7069188120e40e351192"
 
       def install
         bin.install "valida"
       end
     end
     on_arm do
-      url "https://github.com/valida-team/valida/releases/download/v0.0.19/valida_0.0.19_darwin_arm64.tar.gz"
-      sha256 "820063f6fcf0d9a3df5482be299cccce7d253e90bcefc19b85b1cfced008b8b8"
+      url "https://github.com/valida-team/valida/releases/download/v0.0.20/valida_0.0.20_darwin_arm64.tar.gz"
+      sha256 "373381ddd87325c1d18f31b3f819b1aae7e1e2d3e6d99e8c74cec8d36851cb8f"
 
       def install
         bin.install "valida"
@@ -29,8 +29,8 @@ class Valida < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/valida-team/valida/releases/download/v0.0.19/valida_0.0.19_linux_amd64.tar.gz"
-        sha256 "624dc0d8e2e4ed6875f06accb19ca53e72b10a4dc5b9aa57ade7eaaf8b067c8b"
+        url "https://github.com/valida-team/valida/releases/download/v0.0.20/valida_0.0.20_linux_amd64.tar.gz"
+        sha256 "e0dade70abe3e2b3fe73c3d32b61966a51f1817d027d13989ea44a21f223b95e"
 
         def install
           bin.install "valida"
@@ -39,8 +39,8 @@ class Valida < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/valida-team/valida/releases/download/v0.0.19/valida_0.0.19_linux_arm64.tar.gz"
-        sha256 "2e5467d4b400ce6737219ec1e65b62d1a838f1196a6cb54b1b51355c6168ae9d"
+        url "https://github.com/valida-team/valida/releases/download/v0.0.20/valida_0.0.20_linux_arm64.tar.gz"
+        sha256 "14e05050e0c2f99c5a90d59fa16e195258114e877954e24a483fb559ec4cf079"
 
         def install
           bin.install "valida"
